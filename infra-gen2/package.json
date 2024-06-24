@@ -8,6 +8,8 @@
     "backends/storage/*"
   ],
   "dependencies": {
+    "@aws-crypto/client-node": "^4.0.0",
+    "@aws-sdk/client-cognito-identity-provider": "^3.600.0",
     "aws-amplify": "^6.3.6"
   },
   "devDependencies": {
