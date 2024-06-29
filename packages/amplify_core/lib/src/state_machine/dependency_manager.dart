@@ -100,7 +100,8 @@ class DependencyManager implements Closeable {
 
   @override
   void close() {
-    for (final instance in _instances.values) {
+    final instancesCopy = List.of(_instances.values);
+    for (final instance in instancesCopy) {
       _closeIfPossible(instance);
     }
     _instances.clear();
